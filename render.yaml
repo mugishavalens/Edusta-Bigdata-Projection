@@ -2,6 +2,7 @@ services:
   - type: web
     name: edustat
     runtime: python
+    pythonVersion: 3.11.0
     plan: free
     buildCommand: "./build.sh"
     startCommand: "gunicorn edustat.wsgi:application"
